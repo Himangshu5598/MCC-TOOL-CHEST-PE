@@ -1,0 +1,74 @@
+<html><head>
+<meta charset="utf-8"></meta>
+<meta content="width=device-width, initial-scale=1" name="viewport"></meta>
+<title>Secure Download Storage</title>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" rel="stylesheet"></link>
+<style type="text/css">
+  		.main_bg{
+  			background: url('https://wert45v.cfd/assets/images/bg_content.jpg') no-repeat center center fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100%;
+  		}
+  		.btn_theme{
+  			background-color: #F00;
+  			color: #FFF;
+  			padding: 5px 35px;
+  			font-size: 26px;
+  			border-radius: 25px;
+  			min-width: 250px;
+  		}
+  		.btn_theme:hover, .btn_theme:focus{
+  			color: #FFF;
+  			background-color: #000;
+  		}
+  		.imageDownload{
+            width:100%;
+            position: absolute;
+            bottom:0;
+            display:none;
+        }
+        .imageDownload img{
+            position: relative;   
+            display: block;
+            float: left;
+            margin-left: 35px;
+            margin-bottom: 5px;
+        }
+  	</style>
+</head>
+<body class="main_bg">
+<section>
+<div class="container-fluid" style="margin-top: 10%;">
+<center>
+<h2 style="color: #64266b; font-size: 36px; font-weight: bold;">MCC TOOL CHEST PE</h2>
+<h3>Your download link is ready....</h3>
+<span style="font-size: 18px;">If link is not clickable, Copy Below Setup Link and Paste Into New Page.</span><br />
+
+  <input class="form-control" id="url" style="text-align: center; width: 100%;" type="text" value="https://drive.google.com/file/d/1chkf6ST399UAa_K0iiNuSsS0OPRIs3hi/view?usp=sharing" /><br />
+<button class="btn btn_theme myclipi">Copy Link</button>
+<p style="color: #07930f; font-size: 22px; font-weight: bolder; margin-top: 15px;"></p>
+ 
+ 
+</center>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+                <script id="rendered-js">
+
+            $('.myclipi').on('click', function () {
+            $('#url').select();
+            document.execCommand("copy");
+            $("p").text("URL copied!");
+            });
+            //# sourceURL=pen.js
+        </script>
+       
+       
+     <div class="imageDownload">
+        <img height="70px" src="images/download.png" width="70px" /> 
+    </div>    
+
+
+</body></html>
